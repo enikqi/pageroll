@@ -1,0 +1,242 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Pageroll – Privacy policy</title>
+<meta name="description" content="Pageroll works entirely on your device. It doesn't collect, transmit, sell or share your data.">
+<meta name="color-scheme" content="light dark">
+<!--
+  Pageroll privacy policy, standalone page (no external resources). Host it as-is (for example as index.html
+  on GitHub Pages) and put its https:// address in the Chrome Web Store dashboard and in
+  extension/shared/constants.js (PRIVACY_POLICY_URL). Keep it identical in substance to store/privacy-policy.md.
+  Published at https://enikqi.github.io/pageroll/ (repository github.com/enikqi/pageroll).
+-->
+<style>
+  :root {
+    --bg: #F7F9F9; --card: #FFFFFF; --text: #1B2430; --muted: #556270; --line: #E1E7EA;
+    --brand: #0F766E; --brand-soft: #E6F4F2; --accent-text: #0F766E; --code-bg: #EEF2F4;
+    --shadow: 0 1px 2px rgba(16, 24, 40, 0.05), 0 8px 24px rgba(16, 24, 40, 0.06);
+  }
+  @media (prefers-color-scheme: dark) {
+    :root {
+      --bg: #0B1220; --card: #111A2B; --text: #E6EDF3; --muted: #9AA8B8; --line: #22304A;
+      --brand: #2DD4BF; --brand-soft: #0E2A2C; --accent-text: #5EEAD4; --code-bg: #1A2538;
+      --shadow: 0 1px 2px rgba(0, 0, 0, 0.3), 0 8px 24px rgba(0, 0, 0, 0.25);
+    }
+  }
+  * { box-sizing: border-box; }
+  html { -webkit-text-size-adjust: 100%; }
+  body {
+    margin: 0; background: var(--bg); color: var(--text);
+    font: 16px/1.65 system-ui, -apple-system, "Segoe UI", Roboto, "Noto Sans", "Helvetica Neue", Arial, sans-serif;
+  }
+  a { color: var(--accent-text); text-underline-offset: 2px; }
+  a:hover { text-decoration-thickness: 2px; }
+  .top { background: #0F766E; color: #fff; }
+  .top .in { max-width: 860px; margin: 0 auto; padding: 36px 24px 40px; }
+  .brand { display: flex; align-items: center; gap: 12px; font-weight: 700; font-size: 20px; letter-spacing: -0.01em; }
+  .brand svg { width: 40px; height: 40px; flex: none; border-radius: 9px; box-shadow: 0 0 0 1px rgba(255, 255, 255, 0.35); }
+  h1 { font-size: clamp(30px, 5vw, 42px); line-height: 1.15; letter-spacing: -0.02em; margin: 22px 0 10px; }
+  .meta { color: #CCFBF1; font-size: 15px; margin: 0; }
+  main { max-width: 860px; margin: -20px auto 0; padding: 0 16px 48px; }
+  .card { background: var(--card); border: 1px solid var(--line); border-radius: 16px; box-shadow: var(--shadow); padding: 28px 32px; }
+  .card + .card { margin-top: 18px; }
+  .summary { border-left: 4px solid var(--brand); background: var(--brand-soft); border-radius: 12px; padding: 16px 20px; margin: 0; }
+  .points { display: flex; flex-wrap: wrap; gap: 8px; margin: 16px 0 0; padding: 0; list-style: none; }
+  .points li { background: var(--card); border: 1px solid var(--line); border-radius: 999px; padding: 4px 12px; font-size: 14px; font-weight: 600; }
+  h2 { font-size: 21px; line-height: 1.3; letter-spacing: -0.01em; margin: 0 0 12px; }
+  h2 .n { color: var(--accent-text); margin-right: 6px; }
+  p { margin: 0 0 12px; }
+  p:last-child, ul:last-child { margin-bottom: 0; }
+  ul { margin: 0 0 12px; padding-left: 22px; }
+  li { margin: 6px 0; }
+  code { font: 14px/1.4 ui-monospace, "Cascadia Mono", Consolas, Menlo, monospace; background: var(--code-bg); border-radius: 6px; padding: 1px 6px; }
+  .table { overflow-x: auto; margin: 4px 0 12px; }
+  table { width: 100%; border-collapse: collapse; font-size: 15px; }
+  th, td { text-align: left; vertical-align: top; padding: 10px 12px; border-bottom: 1px solid var(--line); }
+  th { font-size: 13px; text-transform: uppercase; letter-spacing: 0.06em; color: var(--muted); font-weight: 700; }
+  tr:last-child td { border-bottom: 0; }
+  td:first-child { min-width: 150px; }
+  .contact { font-size: 18px; font-weight: 700; }
+  footer { max-width: 860px; margin: 0 auto; padding: 0 24px 40px; color: var(--muted); font-size: 14px; }
+  @media (max-width: 600px) {
+    .card { padding: 22px 18px; }
+    /* Tables become stacked blocks: one row per block, column names as small labels. */
+    table, tbody, tr, td { display: block; width: 100%; }
+    thead { display: none; }
+    tr { padding: 12px 0; border-bottom: 1px solid var(--line); }
+    tr:last-child { border-bottom: 0; }
+    td { border: 0; padding: 2px 0; min-width: 0; }
+    td:first-child { min-width: 0; }
+    td[data-label]::before { content: attr(data-label); display: block; margin-top: 6px; font-size: 12px; font-weight: 700;
+      text-transform: uppercase; letter-spacing: 0.06em; color: var(--muted); }
+  }
+  @media print {
+    .top { background: none; color: #000; }
+    .meta { color: #333; }
+    .card { box-shadow: none; }
+  }
+</style>
+</head>
+<body>
+<header class="top">
+  <div class="in">
+    <div class="brand">
+      <svg viewBox="0 0 32 32" aria-hidden="true">
+        <rect width="32" height="32" rx="6" fill="#0F766E"/>
+        <path d="M8 4H18L24 10V24H8Z" fill="#FFFFFF"/>
+        <path d="M18 4V10H24Z" fill="#99F6E4"/>
+        <rect x="8" y="10" width="16" height="1" fill="#0F766E"/>
+        <rect x="8" y="16" width="16" height="1" fill="#0F766E"/>
+        <rect x="6" y="22" width="20" height="6" rx="3" fill="#FFFFFF"/>
+        <rect x="10" y="22" width="16" height="1" fill="#CCFBF1"/>
+        <circle cx="9" cy="25" r="1.5" fill="none" stroke="#0F766E" stroke-width="1"/>
+      </svg>
+      Pageroll
+    </div>
+    <h1>Privacy policy</h1>
+    <p class="meta">Effective date: 19 October 2026 · Applies to Pageroll – Full Page Screenshot &amp; Editor, version 1.0.0 and later</p>
+  </div>
+</header>
+
+<main>
+  <section class="card" aria-labelledby="summary">
+    <h2 id="summary">Summary</h2>
+    <p class="summary">Pageroll works entirely on your device. It doesn't collect, transmit, sell or share your data. It has no
+      accounts, no analytics, no ads and no tracking, and it makes no network requests. The screenshots you take and the
+      details of the pages you capture are stored only in your browser, on your computer, until you delete them.</p>
+    <ul class="points">
+      <li>No account</li><li>No uploads</li><li>No analytics</li><li>No ads</li><li>No remote code</li><li>Works offline</li>
+    </ul>
+  </section>
+
+  <section class="card" aria-labelledby="s1">
+    <h2 id="s1"><span class="n">1.</span>What Pageroll handles, and why</h2>
+    <p>Pageroll handles data only when you ask it to take a capture, and only to provide its single purpose: capturing,
+      editing and saving screenshots of the web page you are viewing.</p>
+    <div class="table"><table>
+      <thead><tr><th>Data</th><th>When</th><th>Why</th></tr></thead>
+      <tbody>
+        <tr><td><strong>Page content as pixels</strong>: what the page shows on screen, including any text or personal information visible on it</td>
+          <td data-label="When">When you start a capture (full page, visible area or selected area)</td>
+          <td data-label="Why">To build the screenshot image. During a full-page capture Pageroll's own script scrolls the page, loads its images and temporarily hides repeated sticky headers, then restores the page exactly as it was.</td></tr>
+        <tr><td><strong>Page title and address (URL)</strong> of the captured page</td><td data-label="When">Saved with each capture</td>
+          <td data-label="Why">To show and search your captures in the library, to suggest a file name, and for the "Open original page" command in the editor.</td></tr>
+        <tr><td><strong>Capture date and time, image size, capture type</strong></td><td data-label="When">Saved with each capture</td>
+          <td data-label="Why">To sort and filter the library and show file sizes.</td></tr>
+        <tr><td><strong>Your annotations</strong> (shapes, text, step numbers, redactions, crop)</td><td data-label="When">While you edit</td>
+          <td data-label="Why">So you can reopen a capture and keep editing it.</td></tr>
+        <tr><td><strong>Your settings</strong> (for example theme, language, image format, file name template, library limits)</td><td data-label="When">When you change them</td>
+          <td data-label="Why">To remember your preferences.</td></tr>
+      </tbody>
+    </table></div>
+    <p>Pageroll does <strong>not</strong> read form fields, passwords, cookies, browsing history, or any page you haven't asked it
+      to capture. Mouse and keyboard input is used only live, to draw a selection rectangle or to cancel a capture with Esc.
+      It is never recorded.</p>
+  </section>
+
+  <section class="card" aria-labelledby="s2">
+    <h2 id="s2"><span class="n">2.</span>Where your data is stored</h2>
+    <ul>
+      <li><strong>Only on your device, in your browser profile.</strong> Captures, thumbnails, annotations and page details are kept in
+        the extension's own IndexedDB database. Settings are kept in <code>chrome.storage.local</code>. While a capture is running,
+        its progress is kept briefly in <code>chrome.storage.session</code>, which lives in memory and is cleared when the browser closes.</li>
+      <li>Nothing is uploaded, synced or backed up by Pageroll. Pageroll doesn't use <code>chrome.storage.sync</code>.</li>
+      <li><strong>Incognito:</strong> captures of incognito windows are never kept in the library. Such a capture exists only while its
+        editor tab is open and is deleted automatically when you close that tab. The same applies to any capture you take while
+        "Save captures to the library" is turned off.</li>
+    </ul>
+  </section>
+
+  <section class="card" aria-labelledby="s3">
+    <h2 id="s3"><span class="n">3.</span>What Pageroll does not do</h2>
+    <ul>
+      <li>No servers, no network requests and no remote code: everything Pageroll runs is inside the extension package.</li>
+      <li>No analytics, telemetry, crash reporting, advertising, cookies or third-party software development kits.</li>
+      <li>No accounts and no sign-in.</li>
+      <li>No sale, transfer or sharing of your data with anyone, and no human access to it.</li>
+      <li>No use of your data for advertising, creditworthiness, lending or any purpose unrelated to taking and editing screenshots.</li>
+    </ul>
+  </section>
+
+  <section class="card" aria-labelledby="s4">
+    <h2 id="s4"><span class="n">4.</span>When images leave Pageroll</h2>
+    <p>Only when <strong>you</strong> do it:</p>
+    <ul>
+      <li><strong>Download / Export:</strong> the PNG, JPEG or PDF file you create is saved to your Downloads folder (or where you
+        choose with "Save as…"). PDF files contain only the flattened image; Pageroll doesn't write the page title or address into
+        the file's metadata.</li>
+      <li><strong>Copy:</strong> the image is placed on your system clipboard. Pageroll never reads the clipboard.</li>
+    </ul>
+    <p>From then on, the file is under your control. Redactions (solid or pixelated) are flattened into the exported pixels, so the
+      hidden content can't be recovered from the file.</p>
+  </section>
+
+  <section class="card" aria-labelledby="s5">
+    <h2 id="s5"><span class="n">5.</span>Retention and deletion</h2>
+    <ul>
+      <li>Captures stay in the library until you delete them, or until the automatic clean-up removes them. By default Pageroll keeps
+        the latest 100 captures. In Options › Library you can choose how many to keep (or "Unlimited") and delete captures older
+        than 7, 30, 90 or 365 days.</li>
+      <li>You can delete one capture, several, or all of them at any time, in the library or in Options › Library › "Delete all
+        captures". Deleted captures are removed from storage right away (after a few seconds in which you can undo).</li>
+      <li><strong>Uninstalling Pageroll removes all of its data</strong> (library and settings) from your browser.</li>
+      <li>Because the library uses Chrome's "unlimited storage" for extensions, clearing your browsing data may not remove it. Use
+        "Delete all" in the library instead.</li>
+    </ul>
+  </section>
+
+  <section class="card" aria-labelledby="s6">
+    <h2 id="s6"><span class="n">6.</span>Permissions and why Pageroll needs them</h2>
+    <div class="table"><table>
+      <thead><tr><th>Permission</th><th>What it is used for</th></tr></thead>
+      <tbody>
+        <tr><td><code>activeTab</code></td><td>Gives temporary access to the tab you're on, only after you click the Pageroll icon or a Pageroll menu item, or press a Pageroll shortcut. Pageroll can't access any website until you ask for a capture, and access ends when you leave the page.</td></tr>
+        <tr><td><code>scripting</code></td><td>Runs Pageroll's own bundled capture script on that tab to measure and scroll the page, load lazy images, hide repeated sticky headers and draw the area-selection overlay, then put everything back.</td></tr>
+        <tr><td><code>storage</code></td><td>Saves your settings on this device.</td></tr>
+        <tr><td><code>unlimitedStorage</code></td><td>Lets the local library hold large captures without hitting the storage quota or being evicted by Chrome.</td></tr>
+        <tr><td><code>downloads</code></td><td>Saves the files you export, with your file name and folder, and opens the "Save as" dialog if you turned it on. Chrome describes this permission as "Manage your downloads". Pageroll doesn't read, open or change your other downloads.</td></tr>
+        <tr><td><code>contextMenus</code></td><td>Adds Pageroll's capture commands to the right-click menu and to the toolbar icon's menu.</td></tr>
+      </tbody>
+    </table></div>
+    <p>Pageroll requests no access to websites in advance (no host permissions) and doesn't use the <code>tabs</code>,
+      <code>history</code>, <code>cookies</code>, <code>clipboardRead</code> or <code>webRequest</code> permissions.</p>
+  </section>
+
+  <section class="card" aria-labelledby="s7">
+    <h2 id="s7"><span class="n">7.</span>Security</h2>
+    <p>Your captures are protected by your operating-system account and your browser profile, like the rest of your browser data.
+      Screenshots can contain sensitive information that was visible on the screen: store and share them with care, and use
+      redaction before sharing.</p>
+  </section>
+
+  <section class="card" aria-labelledby="s8">
+    <h2 id="s8"><span class="n">8.</span>Children</h2>
+    <p>Pageroll is a general-purpose tool. It isn't directed at children, and it doesn't collect personal information from anyone.</p>
+  </section>
+
+  <section class="card" aria-labelledby="s9">
+    <h2 id="s9"><span class="n">9.</span>Chrome Web Store User Data Policy and Limited Use</h2>
+    <p>The use of information received from Google APIs will adhere to the
+      <a href="https://developer.chrome.com/docs/webstore/program-policies/policies">Chrome Web Store User Data Policy</a>,
+      including the <a href="https://developer.chrome.com/docs/webstore/program-policies/limited-use">Limited Use</a> requirements.
+      Pageroll uses the data it handles only to provide its single purpose described above, keeps it on your device, and never
+      sells it, transfers it or uses it for any other purpose.</p>
+  </section>
+
+  <section class="card" aria-labelledby="s10">
+    <h2 id="s10"><span class="n">10.</span>Changes to this policy</h2>
+    <p>If Pageroll's data practices change, this page will be updated and its effective date changed before the new version of the
+      extension is published. Any change in how data is handled will also be shown to you inside the extension before it takes effect.</p>
+  </section>
+
+  <section class="card" aria-labelledby="s11">
+    <h2 id="s11"><span class="n">11.</span>Contact</h2>
+    <p>Questions or requests about this policy:</p>
+    <p class="contact"><a href="mailto:endritn32@gmail.com">endritn32@gmail.com</a></p>
+  </section>
+</main>
+<footer>The English version of this policy is the authoritative one. © 2026 Pageroll.</footer>
+</body>
+</html>
